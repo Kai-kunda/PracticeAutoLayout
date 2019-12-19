@@ -8,30 +8,33 @@
 
 import UIKit
 
+struct Tweet {
+    let id: String
+    let name: String
+    let body: String
+    let publishDate: Date
+}
+
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    let test: [Int] = {
-        var arr: [Int] = []
-        for i in 1...10 {
-            arr.append(i)
-        }
+    @IBOutlet weak var tableView: UITableView!
 
-        return arr
-    }()
+    let tweets = [
+        Tweet(id: "kaikun", name: "カイくん", body: "うおおおおおおおおおおおおおおおおおお", publishDate: Date())
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let nib = UINib(nibName: "TweetCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "TweetCell")
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return test.count
+        return tweets.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel!.text = String(test[indexPath.row])
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TweetCell", for: indexPath) as! TweetCell
         return cell
     }
 }
-
