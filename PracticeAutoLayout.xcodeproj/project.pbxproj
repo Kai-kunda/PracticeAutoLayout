@@ -13,6 +13,8 @@
 		454906EB23A73FCD00D66895 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 454906E923A73FCD00D66895 /* Main.storyboard */; };
 		454906ED23A73FCE00D66895 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 454906EC23A73FCE00D66895 /* Assets.xcassets */; };
 		454906F023A73FCE00D66895 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 454906EE23A73FCE00D66895 /* LaunchScreen.storyboard */; };
+		4576951623AB2FCA001FC623 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4576951423AB2FCA001FC623 /* TweetCell.swift */; };
+		4576951723AB2FCA001FC623 /* TweetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4576951523AB2FCA001FC623 /* TweetCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		454906EC23A73FCE00D66895 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		454906EF23A73FCE00D66895 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		454906F123A73FCE00D66895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4576951423AB2FCA001FC623 /* TweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
+		4576951523AB2FCA001FC623 /* TweetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				454906E323A73FCD00D66895 /* AppDelegate.swift */,
 				454906E523A73FCD00D66895 /* SceneDelegate.swift */,
 				454906E723A73FCD00D66895 /* ViewController.swift */,
+				4576951423AB2FCA001FC623 /* TweetCell.swift */,
+				4576951523AB2FCA001FC623 /* TweetCell.xib */,
 				454906E923A73FCD00D66895 /* Main.storyboard */,
 				454906EC23A73FCE00D66895 /* Assets.xcassets */,
 				454906EE23A73FCE00D66895 /* LaunchScreen.storyboard */,
@@ -128,6 +134,7 @@
 				454906F023A73FCE00D66895 /* LaunchScreen.storyboard in Resources */,
 				454906ED23A73FCE00D66895 /* Assets.xcassets in Resources */,
 				454906EB23A73FCD00D66895 /* Main.storyboard in Resources */,
+				4576951723AB2FCA001FC623 /* TweetCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +148,7 @@
 				454906E823A73FCD00D66895 /* ViewController.swift in Sources */,
 				454906E423A73FCD00D66895 /* AppDelegate.swift in Sources */,
 				454906E623A73FCD00D66895 /* SceneDelegate.swift in Sources */,
+				4576951623AB2FCA001FC623 /* TweetCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
