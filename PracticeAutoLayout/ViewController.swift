@@ -20,7 +20,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var tableView: UITableView!
 
     let tweets = [
-        Tweet(id: "kaikun", name: "カイくん", body: "うおおおおおおおおおおおおおおおおおお", publishDate: Date())
+        Tweet(id: "kaikun", name: "カイくん", body: "うおおおおおおおおおおおおおおおおおお", publishDate: Date()),
+        Tweet(id: "sim", name: "しむさんンンンンンンンンんんんんんんんんンンンンンンンンんん", body: "うおおおおおおおおおおおおおおおおおお", publishDate: Date()),
+        Tweet(id: "yukimine", name: "ゆきみねさん", body: "うおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおお", publishDate: Date()),
     ]
 
     override func viewDidLoad() {
@@ -35,6 +37,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TweetCell", for: indexPath) as! TweetCell
+        cell.setTweet(tweets[indexPath.row])
         return cell
     }
 }

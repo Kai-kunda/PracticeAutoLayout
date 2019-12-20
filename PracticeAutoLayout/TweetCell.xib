@@ -44,7 +44,6 @@
                             </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Fps-75-VCu">
                                 <rect key="frame" x="0.0" y="28.5" width="296" height="235.5"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text">うおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおお</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -61,6 +60,12 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bodyTextView" destination="Fps-75-VCu" id="zW1-XO-hLN"/>
+                <outlet property="dateLabel" destination="ZIt-CJ-IBs" id="d1B-zM-w3F"/>
+                <outlet property="idLabel" destination="CNo-fx-JNU" id="rnZ-FI-mt0"/>
+                <outlet property="nameLabel" destination="vEz-l3-KDd" id="4Q8-cs-n09"/>
+            </connections>
             <point key="canvasLocation" x="140.57971014492756" y="232.36607142857142"/>
         </tableViewCell>
     </objects>

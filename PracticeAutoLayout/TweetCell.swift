@@ -10,15 +10,21 @@ import UIKit
 
 class TweetCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+    @IBOutlet private weak var nameLabel: UILabel!
+    @IBOutlet private weak var idLabel: UILabel!
+    @IBOutlet private weak var dateLabel: UILabel!
+    @IBOutlet private weak var bodyTextView: UITextView!
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+    static let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy/MM/dd"
+        return formatter
+    }()
 
-        // Configure the view for the selected state
+    func setTweet(_ tweet: Tweet) {
+        nameLabel.text = tweet.name
+        idLabel.text = "@" + tweet.id
+        dateLabel.text = TweetCell.dateFormatter.string(from: tweet.publishDate)
+        bodyTextView.text = tweet.body
     }
-    
 }
